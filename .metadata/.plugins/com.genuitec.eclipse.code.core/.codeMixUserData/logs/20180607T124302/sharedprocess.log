@@ -1,0 +1,177 @@
+[2018-06-07 12:43:12.188] [sharedprocess] [info] main {"machineId":"6ba01137f0558a56ecec7e7ddf455c1e811f7c45a433e4262409e9b25e490c8b"}
+[2018-06-07 12:43:12.206] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-07 12:43:12.502] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:17.550] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-07 12:43:17.565] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-07 12:43:17.840] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:18.943] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-07 12:43:19.266] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:20.855] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-07 12:43:20.961] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:21.763] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-07 12:43:25.381] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-07 12:43:25.381] [sharedprocess] [info] Installing the extension: codemix.php-0.9.4
+[2018-06-07 12:43:25.436] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\codemix.php-0.9.4: codemix.php-0.9.4
+[2018-06-07 12:43:25.440] [sharedprocess] [info] Updated metadata of the extension: codemix.php-0.9.4
+[2018-06-07 12:43:25.440] [sharedprocess] [info] Successfully installed the extension: codemix.php-0.9.4
+[2018-06-07 12:43:25.502] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-07 12:43:25.637] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-07 12:43:25.733] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:25.888] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:29.839] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-07 12:43:29.839] [sharedprocess] [info] Installing the extension: felixfbecker.php-debug-1.12.3
+[2018-06-07 12:43:35.523] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\felixfbecker.php-debug-1.12.3: felixfbecker.php-debug-1.12.3
+[2018-06-07 12:43:35.529] [sharedprocess] [info] Updated metadata of the extension: felixfbecker.php-debug-1.12.3
+[2018-06-07 12:43:35.530] [sharedprocess] [info] Successfully installed the extension: felixfbecker.php-debug-1.12.3
+[2018-06-07 12:43:35.586] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-07 12:43:35.710] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-07 12:43:35.779] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:35.865] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:35.936] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-07 12:43:35.936] [sharedprocess] [info] Installing the extension: HookyQR.beautify-1.3.0
+[2018-06-07 12:43:37.955] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\HookyQR.beautify-1.3.0: HookyQR.beautify-1.3.0
+[2018-06-07 12:43:37.958] [sharedprocess] [info] Updated metadata of the extension: HookyQR.beautify-1.3.0
+[2018-06-07 12:43:37.959] [sharedprocess] [info] Successfully installed the extension: HookyQR.beautify-1.3.0
+[2018-06-07 12:43:38.003] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-07 12:43:38.174] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-07 12:43:38.212] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:38.336] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:38.428] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-07 12:43:38.432] [sharedprocess] [info] Installing the extension: linyang95.php-symbols-2.0.4
+[2018-06-07 12:43:38.575] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\linyang95.php-symbols-2.0.4: linyang95.php-symbols-2.0.4
+[2018-06-07 12:43:38.576] [sharedprocess] [info] Updated metadata of the extension: linyang95.php-symbols-2.0.4
+[2018-06-07 12:43:38.577] [sharedprocess] [info] Successfully installed the extension: linyang95.php-symbols-2.0.4
+[2018-06-07 12:43:38.606] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-07 12:43:38.678] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:38.700] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-07 12:43:38.802] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:38.818] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-07 12:43:38.818] [sharedprocess] [info] Installing the extension: formulahendry.auto-close-tag-0.5.6
+[2018-06-07 12:43:38.892] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\formulahendry.auto-close-tag-0.5.6: formulahendry.auto-close-tag-0.5.6
+[2018-06-07 12:43:38.894] [sharedprocess] [info] Updated metadata of the extension: formulahendry.auto-close-tag-0.5.6
+[2018-06-07 12:43:38.895] [sharedprocess] [info] Successfully installed the extension: formulahendry.auto-close-tag-0.5.6
+[2018-06-07 12:43:38.920] [sharedprocess] [info] Scanned user extensions: 5
+[2018-06-07 12:43:38.955] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:39.009] [sharedprocess] [info] Scanned user extensions: 5
+[2018-06-07 12:43:39.068] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:43:45.369] [sharedprocess] [info] Scanned user extensions: 5
+[2018-06-07 12:43:45.369] [sharedprocess] [info] Installing the extension: Zignd.html-css-class-completion-1.17.1
+[2018-06-07 12:44:13.530] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\Zignd.html-css-class-completion-1.17.1: Zignd.html-css-class-completion-1.17.1
+[2018-06-07 12:44:13.539] [sharedprocess] [info] Updated metadata of the extension: Zignd.html-css-class-completion-1.17.1
+[2018-06-07 12:44:13.542] [sharedprocess] [info] Successfully installed the extension: Zignd.html-css-class-completion-1.17.1
+[2018-06-07 12:44:13.812] [sharedprocess] [info] Scanned user extensions: 6
+[2018-06-07 12:44:13.826] [sharedprocess] [info] Scanned user extensions: 6
+[2018-06-07 12:44:14.150] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:14.156] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:14.306] [sharedprocess] [info] Scanned user extensions: 6
+[2018-06-07 12:44:14.367] [sharedprocess] [info] Scanned user extensions: 6
+[2018-06-07 12:44:14.367] [sharedprocess] [info] Installing the extension: codemix.web-0.9.1
+[2018-06-07 12:44:14.394] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:14.416] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\codemix.web-0.9.1: codemix.web-0.9.1
+[2018-06-07 12:44:14.418] [sharedprocess] [info] Updated metadata of the extension: codemix.web-0.9.1
+[2018-06-07 12:44:14.418] [sharedprocess] [info] Successfully installed the extension: codemix.web-0.9.1
+[2018-06-07 12:44:14.473] [sharedprocess] [info] Scanned user extensions: 7
+[2018-06-07 12:44:14.578] [sharedprocess] [info] Scanned user extensions: 7
+[2018-06-07 12:44:14.589] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:14.691] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:15.088] [sharedprocess] [info] Scanned user extensions: 7
+[2018-06-07 12:44:15.172] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:15.218] [sharedprocess] [info] Scanned user extensions: 7
+[2018-06-07 12:44:15.218] [sharedprocess] [info] Installing the extension: christian-kohler.path-intellisense-1.4.2
+[2018-06-07 12:44:15.592] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\christian-kohler.path-intellisense-1.4.2: christian-kohler.path-intellisense-1.4.2
+[2018-06-07 12:44:15.594] [sharedprocess] [info] Updated metadata of the extension: christian-kohler.path-intellisense-1.4.2
+[2018-06-07 12:44:15.595] [sharedprocess] [info] Successfully installed the extension: christian-kohler.path-intellisense-1.4.2
+[2018-06-07 12:44:15.673] [sharedprocess] [info] Scanned user extensions: 8
+[2018-06-07 12:44:15.757] [sharedprocess] [info] Scanned user extensions: 8
+[2018-06-07 12:44:15.863] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:15.936] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:16.078] [sharedprocess] [info] Scanned user extensions: 8
+[2018-06-07 12:44:16.154] [sharedprocess] [info] Scanned user extensions: 8
+[2018-06-07 12:44:16.154] [sharedprocess] [info] Installing the extension: felixfbecker.php-intellisense-2.3.1
+[2018-06-07 12:44:16.159] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:26.186] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\felixfbecker.php-intellisense-2.3.1: felixfbecker.php-intellisense-2.3.1
+[2018-06-07 12:44:26.189] [sharedprocess] [info] Updated metadata of the extension: felixfbecker.php-intellisense-2.3.1
+[2018-06-07 12:44:26.190] [sharedprocess] [info] Successfully installed the extension: felixfbecker.php-intellisense-2.3.1
+[2018-06-07 12:44:26.356] [sharedprocess] [info] Scanned user extensions: 9
+[2018-06-07 12:44:26.436] [sharedprocess] [info] Scanned user extensions: 9
+[2018-06-07 12:44:26.667] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:26.672] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:26.867] [sharedprocess] [info] Scanned user extensions: 9
+[2018-06-07 12:44:26.941] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:27.012] [sharedprocess] [info] Scanned user extensions: 9
+[2018-06-07 12:44:27.013] [sharedprocess] [info] Installing the extension: formulahendry.code-runner-0.9.3
+[2018-06-07 12:44:28.095] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\formulahendry.code-runner-0.9.3: formulahendry.code-runner-0.9.3
+[2018-06-07 12:44:28.099] [sharedprocess] [info] Updated metadata of the extension: formulahendry.code-runner-0.9.3
+[2018-06-07 12:44:28.100] [sharedprocess] [info] Successfully installed the extension: formulahendry.code-runner-0.9.3
+[2018-06-07 12:44:28.143] [sharedprocess] [info] Scanned user extensions: 10
+[2018-06-07 12:44:28.222] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:28.262] [sharedprocess] [info] Scanned user extensions: 10
+[2018-06-07 12:44:28.390] [sharedprocess] [info] Scanned user extensions: 10
+[2018-06-07 12:44:28.473] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:28.527] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:28.615] [sharedprocess] [info] Scanned user extensions: 10
+[2018-06-07 12:44:28.616] [sharedprocess] [info] Installing the extension: msjsdiag.debugger-for-chrome-4.4.3
+[2018-06-07 12:44:31.248] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\msjsdiag.debugger-for-chrome-4.4.3: msjsdiag.debugger-for-chrome-4.4.3
+[2018-06-07 12:44:31.252] [sharedprocess] [info] Updated metadata of the extension: msjsdiag.debugger-for-chrome-4.4.3
+[2018-06-07 12:44:31.253] [sharedprocess] [info] Successfully installed the extension: msjsdiag.debugger-for-chrome-4.4.3
+[2018-06-07 12:44:31.323] [sharedprocess] [info] Scanned user extensions: 11
+[2018-06-07 12:44:31.351] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:31.411] [sharedprocess] [info] Scanned user extensions: 11
+[2018-06-07 12:44:31.541] [sharedprocess] [info] Scanned user extensions: 11
+[2018-06-07 12:44:31.550] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:31.642] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:31.783] [sharedprocess] [info] Scanned user extensions: 11
+[2018-06-07 12:44:31.783] [sharedprocess] [info] Installing the extension: dbaeumer.vscode-eslint-1.4.10
+[2018-06-07 12:44:33.149] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\dbaeumer.vscode-eslint-1.4.10: dbaeumer.vscode-eslint-1.4.10
+[2018-06-07 12:44:33.152] [sharedprocess] [info] Updated metadata of the extension: dbaeumer.vscode-eslint-1.4.10
+[2018-06-07 12:44:33.153] [sharedprocess] [info] Successfully installed the extension: dbaeumer.vscode-eslint-1.4.10
+[2018-06-07 12:44:33.219] [sharedprocess] [info] Scanned user extensions: 12
+[2018-06-07 12:44:33.335] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:33.350] [sharedprocess] [info] Scanned user extensions: 12
+[2018-06-07 12:44:33.355] [sharedprocess] [info] Scanned user extensions: 12
+[2018-06-07 12:44:33.489] [sharedprocess] [info] Scanned user extensions: 12
+[2018-06-07 12:44:33.497] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:33.505] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:33.549] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:33.600] [sharedprocess] [info] Scanned user extensions: 12
+[2018-06-07 12:44:33.601] [sharedprocess] [info] Installing the extension: kokororin.vscode-phpfmt-1.0.29
+[2018-06-07 12:44:33.804] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\kokororin.vscode-phpfmt-1.0.29: kokororin.vscode-phpfmt-1.0.29
+[2018-06-07 12:44:33.806] [sharedprocess] [info] Updated metadata of the extension: kokororin.vscode-phpfmt-1.0.29
+[2018-06-07 12:44:33.806] [sharedprocess] [info] Successfully installed the extension: kokororin.vscode-phpfmt-1.0.29
+[2018-06-07 12:44:33.865] [sharedprocess] [info] Scanned user extensions: 13
+[2018-06-07 12:44:33.927] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:34.005] [sharedprocess] [info] Scanned user extensions: 13
+[2018-06-07 12:44:34.049] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:34.237] [sharedprocess] [info] Scanned user extensions: 13
+[2018-06-07 12:44:34.280] [sharedprocess] [info] Scanned user extensions: 13
+[2018-06-07 12:44:34.280] [sharedprocess] [info] Installing the extension: xabikos.javascriptsnippets-1.6.0
+[2018-06-07 12:44:34.288] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:34.322] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\xabikos.javascriptsnippets-1.6.0: xabikos.javascriptsnippets-1.6.0
+[2018-06-07 12:44:34.325] [sharedprocess] [info] Updated metadata of the extension: xabikos.javascriptsnippets-1.6.0
+[2018-06-07 12:44:34.325] [sharedprocess] [info] Successfully installed the extension: xabikos.javascriptsnippets-1.6.0
+[2018-06-07 12:44:34.369] [sharedprocess] [info] Scanned user extensions: 14
+[2018-06-07 12:44:34.407] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:34.470] [sharedprocess] [info] Scanned user extensions: 14
+[2018-06-07 12:44:34.510] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:34.883] [sharedprocess] [info] Scanned user extensions: 14
+[2018-06-07 12:44:34.926] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:35.045] [sharedprocess] [info] Scanned user extensions: 14
+[2018-06-07 12:44:35.045] [sharedprocess] [info] Installing the extension: mkaufman.htmlhint-0.5.0
+[2018-06-07 12:44:42.064] [sharedprocess] [info] Extracted extension to C:\Users\Brad-LP\.vscode\extensions\mkaufman.htmlhint-0.5.0: mkaufman.htmlhint-0.5.0
+[2018-06-07 12:44:42.066] [sharedprocess] [info] Updated metadata of the extension: mkaufman.htmlhint-0.5.0
+[2018-06-07 12:44:42.067] [sharedprocess] [info] Successfully installed the extension: mkaufman.htmlhint-0.5.0
+[2018-06-07 12:44:42.130] [sharedprocess] [info] Scanned user extensions: 15
+[2018-06-07 12:44:42.192] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:42.254] [sharedprocess] [info] Scanned user extensions: 15
+[2018-06-07 12:44:42.390] [sharedprocess] [info] Scanned user extensions: 15
+[2018-06-07 12:44:42.398] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:42.455] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:46.889] [sharedprocess] [info] Scanned user extensions: 15
+[2018-06-07 12:44:46.895] [sharedprocess] [info] Scanned user extensions: 15
+[2018-06-07 12:44:46.963] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:47.681] [sharedprocess] [info] Scanned user extensions: 15
+[2018-06-07 12:44:47.816] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:44:50.234] [sharedprocess] [info] Scanned user extensions: 15
+[2018-06-07 12:45:20.389] [sharedprocess] [info] Scanned user extensions: 15
+[2018-06-07 12:45:20.489] [sharedprocess] [info] Scanned system extensions: 66
+[2018-06-07 12:49:50.447] [sharedprocess] [info] Scanned user extensions: 15

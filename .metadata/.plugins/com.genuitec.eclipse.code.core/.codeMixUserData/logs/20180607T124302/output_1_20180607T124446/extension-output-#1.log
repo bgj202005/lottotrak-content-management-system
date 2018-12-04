@@ -1,0 +1,27 @@
+Looking for git in: C:\Program Files\Git\cmd\git.exe
+Using git 2.16.2.windows.1 from C:\Program Files\Git\cmd\git.exe
+git rev-parse --show-toplevel
+git config --get commit.template
+git status -z -u
+git check-ignore -z --stdin
+git symbolic-ref --short HEAD
+git rev-parse master
+git rev-parse --symbolic-full-name --abbrev-ref master@{u}
+git rev-list --left-right master...origin/master
+git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+git remote --verbose
+git check-ignore -z --stdin
+git check-ignore -z --stdin
+git check-ignore -z --stdin
+git show :Lottotrak/src/hello-world.php
+git show :Lottotrak/READFIRST.md
+git rev-parse --show-toplevel
+git config --get commit.template
+git status -z -u
+git check-ignore -z --stdin
+git symbolic-ref --short HEAD
+git rev-parse master
+git rev-parse --symbolic-full-name --abbrev-ref master@{u}
+git rev-list --left-right master...origin/master
+git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+git remote --verbose

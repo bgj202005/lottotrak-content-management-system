@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "C:\\wamp\\www\\lottotrak\\RemoteSystemsTempFiles"
+        },
+        {
+            "path": "C:\\wamp\\www\\lottotrak\\Lottotrak"
+        }
+    ],
+    "settings": {
+        "php.suggest.basic": "false"
+    }
+}
