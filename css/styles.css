@@ -166,8 +166,8 @@ h5 {
 } */
 
 /* ul.nav li.dropdown:hover ul.dropdown-menu { display:block; } */
-a.navbar-brand { font-size: 18px; display: inline-block; background: url('../images/Bradley-Jacobsen_51616_sm.png') no-repeat;
-height: 56px; padding: 20px 20px 20px 90px; color: #9d9d9d; }
+a.navbar-brand { font-size: 13px; display: inline-block; background: url('../images/lottotrak-logo.png') no-repeat;
+height: 60px; padding: 20px 20px 20px 250px; color: #9d9d9d; margin-top:5px;}
 a.navbar-brand: hover { text-decoration: none; color: black; }
 /* h1 h2 h3 { font-family: georgia, serif; }
 h2 a { color: black; } */
