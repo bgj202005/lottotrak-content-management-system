@@ -107,7 +107,6 @@ switch (ENVIRONMENT)
  * as this file.
  */
 	$system_path = '../../CI_application/system';
-
 /*
  *---------------------------------------------------------------
  * APPLICATION FOLDER NAME
