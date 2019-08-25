@@ -28,9 +28,9 @@
 	font-size:14px;
 	line-height:18px;
 	color:#d8d8d8;
-} /* color:#d8d8d8; */
+}
 
-.menu > li > a.active { color: #f00; }
+.menu > li > a.active { color: #ff0000}
 
 /* Login and Registration Buttons */
 #page1 .bg .container header .col-lg-6 #main-menu .nav.navbar-nav.navbar-inverse.navbar-right {
@@ -39,7 +39,7 @@
 }
 #page1 .bg .container header .col-lg-6 #main-menu .nav.navbar-nav.navbar-inverse.navbar-right .dropdown .dropdown-toggle:hover {
 	color: #d8d8d8; 
-	background-color: #000000;
+	background-color: #F00000;
 }
 
 #page1 .bg .container header .col-lg-6 #main-menu .nav.navbar-nav.navbar-inverse.navbar-right .dropdown .dropdown-toggle:visited {
@@ -58,7 +58,7 @@
 
 .menu > li > a:hover, .menu > li > a.active, .me nu > li.sfHover > a {color:#787878;}
 
-.menu li:hover {visibility:	inherit; }
+.menu li:hover {visibility:	inherit; } 
 
 /* .menu li strong {
 	position:absolute;

@@ -1,6 +1,7 @@
 .sm-clean {
   /* background: #000000; */
-  border-radius: 5px; 
+  border-radius: 5px;
+  margin-top: 15px; 		
 }
 .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active {
   padding: 13px 20px;

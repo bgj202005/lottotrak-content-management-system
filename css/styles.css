@@ -1,7 +1,6 @@
 @import"normalize.css";
-@import"menu-style.css";
 @import"slider.css"
-
+@import"menu-style.css"	
 @CHARSET "ISO-8859-1";
 
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
@@ -33,7 +32,7 @@ header {
 .extra-wrap {overflow:hidden;}
 
 a {color:#fff; outline:none;}
-a:hover {text-decoration:none;}
+a:hover {color: #D23600; text-decoration:none;}
 .col-1, .col-2 {float:left;}
 .col-1 {width:330px;}
 
@@ -187,7 +186,7 @@ height: 60px; padding: 20px 20px 20px 250px; color: #9d9d9d; margin-top:5px;}
 a.navbar-brand: hover { text-decoration: none; color: black; }
 /* h1 h2 h3 { font-family: georgia, serif; }
 h2 a { color: black; } */
-p.pubdate { font-style: italic; font-size: 0.9em; }
+p.pubdate { font-style: italic; font-size: 1.0em ; }
 .sidebar ul { margin-left: -20px; font-size: 1.5em; line-height: 1.2em; margin-bottom: 0; }
 
 a {color:#fff; outline:none;}
@@ -195,6 +194,7 @@ a:hover {text-decoration:none;}
 
 .home {padding: 20px;} /* Homepage image padding */
 
+.row { margin-left: 0px;}
 .row-1 {padding-top:10px;}
 .row-2 {padding:34px 0 28px;}
 
@@ -240,6 +240,15 @@ margin: 0 auto;
 .credit {
   margin: 20px 0;
   text-align: center;		
+}
+
+/*********************** Pagination ************************/
+.page-item.active .page-link {
+ 
+  z-index: 1;
+  color: #fff;
+  background-color: #00000;
+  border-color: #AEFF5E;
 }
 
 /****************************footer************************/
@@ -343,8 +352,6 @@ table th:first-child {
 	text-align:left;
 	padding-left: 20px;
 }
-
-
 table td.item-1 {background:url(../images/flags2.png) no-repeat 10px 0 #000;}
 table tr:first-child td.item-1 {background:url(../images/flags2.png) no-repeat 10px 26px #000;}
 table td.item-2 {background:url(../images/flags2.png) no-repeat 10px -105px #000;}
@@ -352,3 +359,177 @@ table td.item-3 {background:url(../images/flags2.png) no-repeat 10px -210px #000
 
 tbody tr:first-child td {padding-top:26px;}
 tbody tr.last td {padding-bottom:26px;}
+.btn-dark {
+	margin-top:25px;
+}
+.btn-dark a:hover { color: #D23600; }
+/** Login and Registration Box Styles **/
+.seminor-login-modal-body .close{
+ position: relative;
+ top: -45px;
+ left: 10px;
+color: #f58220; /* #1cd8ad; */ 
+}
+.seminor-login-modal-body .close{
+    opacity:0.75;
+}
+
+.seminor-login-modal-body .close:focus, .seminor-login-modal-body .close:hover {
+ color: #D23600;
+ opacity: 1;
+ text-decoration: none;
+ outline:0;
+}
+
+.seminor-login-modal .modal-dialog .modal-content{
+    border-radius:0px;
+	background-color: #343a40; 
+}
+
+/* form animation */
+.seminor-login-form .form-group {
+  position: relative;
+  margin-bottom: 1.5em !important;
+}
+.seminor-login-form .form-control{
+ border: 0px solid #ced4da !important;
+ border-bottom:1px solid #adadad !important;
+ border-radius:0 !important;
+}
+.seminor-login-form .form-control:focus, .seminor-login-form .form-control:active{
+ outline:none !important;
+ outline-width: 0;
+ border-color: #adadad !important;
+ box-shadow: 0 0 0 0.2rem transparent;
+}
+*:focus {
+ outline: none;
+}
+.seminor-login-form{
+ padding: 2em 0 0;
+}
+
+.form-control-placeholder {
+position: absolute;
+top: 0;
+padding: 7px 0 0 13px;
+transition: all 200ms;
+opacity: 0.5;
+border-top: 0px;
+border-left: 0;
+border-right: 0;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+font-size: 75%;
+-webkit-transform: translate3d(0, -100%, 0);
+       transform: translate3d(0, -100%, 0);
+opacity: 1;
+}
+
+.container-checkbox input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+.checkmark-box {
+ position: absolute;
+ top: -5px;
+ left: 0;
+ height: 25px;
+ width: 25px;
+ background-color: #adadad;
+}
+.container-checkbox {
+ display: block;
+ position: relative;
+ padding-left: 40px;
+ margin-bottom: 20px;
+ cursor: pointer;
+ font-size: 18px;
+ font-weight: bold;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ line-height: 1.1;
+}
+.container-checkbox input:checked ~ .checkmark-box:after {
+ color: #fff;
+}
+.container-checkbox input:checked ~ .checkmark-box:after {
+ display: block;
+}
+.container-checkbox .checkmark-box:after {
+ left: 10px;
+ top: 4px;
+ width: 7px;
+ height: 15px;
+ border: solid white;
+ border-width: 0 3px 3px 0;
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+}
+.checkmark:after, .checkmark-box:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+.container-checkbox input:checked ~ .checkmark-box {
+ background-color: #D23600; /* #f58220; */
+ border: 0px solid transparent;
+}
+.btn-check-log .btn-check-login {
+ font-size: 16px;
+ padding: 10px 0;
+}
+.btn-check-login:hover {
+    color: #fff;
+    background-color: #D23600; /* #f58220; */
+    border: 2px solid #D23600; /* #f58220; */
+}
+.btn-check-login {
+ color: #ffffff; /* #f58220; */
+ background-color: transparent;
+ border: 2px solid #D23600; /* #f58220; */
+ transition: all ease-in-out .3s;
+}
+.btn-check-login {
+ display: inline-block;
+ padding: 12px 0;
+ margin-bottom: 0;
+ line-height: 1.42857143;
+ text-align: center;
+ white-space: nowrap;
+ vertical-align: middle;
+ -ms-touch-action: manipulation;
+ touch-action: manipulation;
+ cursor: pointer;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ background-image: none;
+ border-radius: 0;
+ width: 100%;
+}
+.forgot-pass-fau a {
+    text-decoration: none !important;
+    font-size: 14px;
+}
+.text-primary-fau {
+    color: #ffffff;
+	font-size: 18px;
+}
+.select-form-control-placeholder{
+  font-size: 100%;
+    padding: 7px 0 0 13px;
+    margin: 0;
+}
+
+.js-reg-error, .js-login-error {
+	text-align:center;
+	font-size: 24px
+}
