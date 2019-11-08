@@ -48,6 +48,8 @@ p {margin-bottom:18px;}
 h1 {
 	padding:4px 0 0 32px; 
 	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
 }
 h1 a {
 	display:block; 
@@ -528,10 +530,41 @@ opacity: 1;
     padding: 7px 0 0 13px;
     margin: 0;
 }
+.readmore {
+	background: url("../images/sm-readmore-button.png") no-repeat 0 0;
+	display: block;
+	width: 115px;
+	height: 65px;
+	color: #9d9d9d;
+	font-size: 12px;
+	text-align: center;
+	margin: auto;
+	line-height: 40px;
+	background-position: 5px -5px;
+}
+
+.readmore:hover {
+	color: #000000;
+}
+
+.readmore:visited {
+	color: #ffffff;
+}
+
 
 #validation_success_message, #validation_error, #login_error_message, #login_success_message {
 	text-align: center;
 	margin: 15px;
 	font-size: 18px;
 	word-wrap: break-word;
+}
+
+#login_container
+{
+    top: 20;
+    height: 1.9em;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    text-align:center
 }
