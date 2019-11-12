@@ -364,7 +364,7 @@ tbody tr.last td {padding-bottom:26px;}
 .btn-dark {
 	margin-top:25px;
 }
-.btn-dark a:hover { color: #D23600; }
+.btn-dark:hover { color: #D23600; }
 /** Login and Registration Box Styles **/
 .seminor-login-modal-body .close{
  position: relative;
@@ -566,5 +566,5 @@ opacity: 1;
     left: 0;
     position: fixed;
     width: 100%;
-    text-align:center
+    text-align:right;
 }
