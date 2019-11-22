@@ -269,3 +269,7 @@ text-align: left;
 .form-control {
   border-radius: 0px;
 }
+/* #########################################
+   #    override the bootstrap nav         #
+   ########################################*/
+   .tab-content>.active{display:block; color:#ffffff}
