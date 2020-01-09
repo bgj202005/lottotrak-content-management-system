@@ -1,7 +1,7 @@
  /*********************************menu**********************************/
  #main-menu{
-	padding: 6px 0 16px 29px;
-	width:671px;
+	padding: 16px 0 16px 29px;
+	width:100%;
 }
 
 .nav-bar { font-family:Arial, Helvetica, sans-serif;
@@ -30,7 +30,7 @@
 	color:#d8d8d8;
 }
 
-.menu > li > a.active { color: #f00; }
+.menu > li > a.active { color: #ff0000}
 
 /* Login and Registration Buttons */
 #page1 .bg .container header .col-lg-6 #main-menu .nav.navbar-nav.navbar-inverse.navbar-right {
@@ -38,8 +38,8 @@
 	margin-top: -45px;
 }
 #page1 .bg .container header .col-lg-6 #main-menu .nav.navbar-nav.navbar-inverse.navbar-right .dropdown .dropdown-toggle:hover {
-	color: #d8d8d8;
-	background-color: #000000;
+	color: #d8d8d8; 
+	background-color: #F00000;
 }
 
 #page1 .bg .container header .col-lg-6 #main-menu .nav.navbar-nav.navbar-inverse.navbar-right .dropdown .dropdown-toggle:visited {
@@ -47,6 +47,7 @@
 	background-color: #000000;
 }
 #page1 .bg .container header .col-lg-6 #main-menu .nav.navbar-nav.navbar-inverse.navbar-right .dropdown .dropdown-menu.dropdown-lr.animated.flipInX {
+	color: #d8d8d8;
 	background-color: #000000;
 	padding-: 10px;
 }
@@ -57,9 +58,9 @@
 
 .menu > li > a:hover, .menu > li > a.active, .me nu > li.sfHover > a {color:#787878;}
 
-.menu li:hover {visibility:	inherit; }
+.menu li:hover {visibility:	inherit; } 
 
-.menu li strong {
+/* .menu li strong {
 	position:absolute;
 	background:url(../images/arrow.png) no-repeat 0 0;
 	display:block;
@@ -67,7 +68,7 @@
 	top:8px;
 	height:4px;
 	width:7px;
-}
+} */
 
 .menu li strong {
     background: url("../images/arrow.png") no-repeat scroll 0 0 transparent;
@@ -82,6 +83,7 @@
 /* General sizing */
 ul.dropdown-lr {
   width: 300px;
+  background-color: #000;	
 }
 
 /******************************** submenu **************************************/
@@ -131,7 +133,8 @@ ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 995px) {
-	#main-menu{width:556px;padding-left:0;}
+	#main-menu{display: inline-block; /* width:556px;padding-left:0; */}
+	#main-nav { line-height: 0; text-align: center;}
 	.menu {	margin-top: 70px; }
 	.menu > li {padding-right:25px;}
 #page1 .bg .container header .col-lg-6 #main-menu .nav.navbar-nav.navbar-inverse.navbar-right {
@@ -162,7 +165,7 @@ ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
 	}
 	
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	#main-menu{ width:420px;}	
+	#main-menu{ width:420px; margin-top:75px;}	
 	.menu {	margin-top: 60px; } /* Add Margin from the Top to increase separate main menu */ 
 	.menu ul {width:410px;}
 	.menu ul ul {width:400px;}

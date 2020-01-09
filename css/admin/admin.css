@@ -51,6 +51,7 @@ ol.sortable, ol.sortable ol {
 
 ol.sortable {
 	margin: 4em 0;
+	max-width: 250px;
 }
 
 .sortable li {
@@ -210,6 +211,10 @@ text-align: left;
     max-height: 100px;
     max-width: 100px;
 }
+#sandbox-container {
+    margin-top: 15px;
+    padding: 10px;
+}
 /* #########################################
    #    override the bootstrap configs     #
    ######################################### */
@@ -268,3 +273,7 @@ text-align: left;
 .form-control {
   border-radius: 0px;
 }
+/* #########################################
+   #    override the bootstrap nav         #
+   ########################################*/
+   .tab-content>.active{display:block; color:#ffffff}
