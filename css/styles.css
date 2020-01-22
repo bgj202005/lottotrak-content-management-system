@@ -195,9 +195,9 @@ hr {
 /* Multi-level Dropdown End Here */
 
 /* ul.nav li.dropdown:hover ul.dropdown-menu { display:block; } */
-/* a.navbar-branding { font-size: 13px; display: inline-block; background-image: url('../images/lottotrak-logo.png') no-repeat;
+a.navbar-brand { font-size: 13px; display: inline-block; background: url('../images/lottotrak-logo.png') no-repeat;
 height: 60px; padding: 20px 20px 20px 250px; color: #9d9d9d; margin-top:5px;}
-a.navbar-brand:hover { text-decoration: none; color: #D23600; } */
+a.navbar-brand:hover { text-decoration: none; color: #D23600; } 
 /* h1 h2 h3 { font-family: georgia, serif; }
 h2 a { color: black; } */
 p.pubdate { font-style: italic; font-size: 1.0em ; }
