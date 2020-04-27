@@ -1,8 +1,14 @@
 @import"normalize.css";
-@import"menu-style.css";
-@import"slider.css"
-
+@import"slider.css";
+@import"menu-style.css";	
 @CHARSET "ISO-8859-1";
+@font-face {
+    font-family: 'Erbos Draco 1st Open NBP';
+    src: url('http://localhost/lottotrak/css/fonts/Erbos-Draco-1st-Open-NBP.woff2') format('woff2'),
+        url('http://localhost/lottotrak/css/fonts/Erbos-Draco-1st-Open-NBP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
 mark, rp, rt, ruby, summary, time {display:inline;}
@@ -33,7 +39,7 @@ header {
 .extra-wrap {overflow:hidden;}
 
 a {color:#fff; outline:none;}
-a:hover {text-decoration:none;}
+a:hover {color: #D23600; text-decoration:none;}
 .col-1, .col-2 {float:left;}
 .col-1 {width:330px;}
 
@@ -47,8 +53,11 @@ p {margin-bottom:18px;}
 .p5 {margin-bottom:50px;}
 
 h1 {
+	color: #ffffff;
 	padding:4px 0 0 32px; 
 	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
 }
 h1 a {
 	display:block; 
@@ -86,6 +95,10 @@ h4.st1 {
 h5 {
 	color:#FFF;
 	font-weight:normal;
+}
+
+hr {
+	color:#ffffff; 
 }
 
 .content-menu {
@@ -164,14 +177,30 @@ h5 {
   margin-bottom: 20px;
   background-color: black;
 } */
+/* Mult-Level Dropdowns - Header Menu Only */
+/* Mobile first layout SmartMenus Core CSS (it's not recommended editing these rules)
+   You need this once per page no matter how many menu trees or different themes you use.
+-------------------------------------------------------------------------------------------*/
+
+.sm{box-sizing:border-box;position:relative;z-index:9999;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.sm,.sm ul,.sm li{display:block;list-style:none;margin:0;padding:0;line-height:normal;direction:ltr;text-align:left;}
+.sm-rtl,.sm-rtl ul,.sm-rtl li{direction:rtl;text-align:right;}
+.sm>li>h1,.sm>li>h2,.sm>li>h3,.sm>li>h4,.sm>li>h5,.sm>li>h6{margin:0;padding:0;}
+.sm ul{display:none;}
+.sm li,.sm a{position:relative;}
+.sm a{display:block;}
+.sm a.disabled{cursor:default;}
+.sm::after{content:"";display:block;height:0;font:0px/0 serif;clear:both;overflow:hidden;}
+.sm *,.sm *::before,.sm *::after{box-sizing:inherit;}
+/* Multi-level Dropdown End Here */
 
 /* ul.nav li.dropdown:hover ul.dropdown-menu { display:block; } */
 a.navbar-brand { font-size: 13px; display: inline-block; background: url('../images/lottotrak-logo.png') no-repeat;
 height: 60px; padding: 20px 20px 20px 250px; color: #9d9d9d; margin-top:5px;}
-a.navbar-brand: hover { text-decoration: none; color: black; }
+a.navbar-brand:hover { text-decoration: none; color: #D23600; }
 /* h1 h2 h3 { font-family: georgia, serif; }
 h2 a { color: black; } */
-p.pubdate { font-style: italic; font-size: 0.9em; }
+p.pubdate { font-style: italic; font-size: 1.0em ; }
 .sidebar ul { margin-left: -20px; font-size: 1.5em; line-height: 1.2em; margin-bottom: 0; }
 
 a {color:#fff; outline:none;}
@@ -179,6 +208,7 @@ a:hover {text-decoration:none;}
 
 .home {padding: 20px;} /* Homepage image padding */
 
+.row { margin-left: 0px;}
 .row-1 {padding-top:10px;}
 .row-2 {padding:34px 0 28px;}
 
@@ -224,6 +254,18 @@ margin: 0 auto;
 .credit {
   margin: 20px 0;
   text-align: center;		
+}
+
+/*********************** Pagination ************************/
+.page-item .page-link {
+	color: #000; 	
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #000; 
+  background-color: #de2623;
+  border-color: #f2f2f2;
 }
 
 /****************************footer************************/
@@ -327,8 +369,6 @@ table th:first-child {
 	text-align:left;
 	padding-left: 20px;
 }
-
-
 table td.item-1 {background:url(../images/flags2.png) no-repeat 10px 0 #000;}
 table tr:first-child td.item-1 {background:url(../images/flags2.png) no-repeat 10px 26px #000;}
 table td.item-2 {background:url(../images/flags2.png) no-repeat 10px -105px #000;}
@@ -336,3 +376,360 @@ table td.item-3 {background:url(../images/flags2.png) no-repeat 10px -210px #000
 
 tbody tr:first-child td {padding-top:26px;}
 tbody tr.last td {padding-bottom:26px;}
+.btn-dark {
+	margin-top:25px;
+}
+.btn-dark:hover { color: #D23600; }
+/** Login and Registration Box Styles **/
+.seminor-login-modal-body .close{
+ position: relative;
+ top: -45px;
+ left: 10px;
+color: #f58220; /* #1cd8ad; */ 
+}
+.seminor-login-modal-body .close{
+    opacity:0.75;
+}
+
+.seminor-login-modal-body .close:focus, .seminor-login-modal-body .close:hover {
+ color: #D23600;
+ opacity: 1;
+ text-decoration: none;
+ outline:0;
+}
+
+.seminor-login-modal .modal-dialog .modal-content{
+    border-radius:0px;
+	background-color: #343a40; 
+}
+
+/* form animation */
+.seminor-login-form .form-group {
+  position: relative;
+  margin-bottom: 1.5em !important;
+}
+.seminor-login-form .form-control{
+ border: 0px solid #ced4da !important;
+ border-bottom:1px solid #adadad !important;
+ border-radius:0 !important;
+}
+.seminor-login-form .form-control:focus, .seminor-login-form .form-control:active{
+ outline:none !important;
+ outline-width: 0;
+ border-color: #adadad !important;
+ box-shadow: 0 0 0 0.2rem transparent;
+}
+*:focus {
+ outline: none;
+}
+.seminor-login-form{
+ padding: 2em 0 0;
+}
+
+.form-control-placeholder {
+position: absolute;
+top: 0;
+padding: 7px 0 0 13px;
+transition: all 200ms;
+opacity: 0.5;
+border-top: 0px;
+border-left: 0;
+border-right: 0;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+font-size: 75%;
+-webkit-transform: translate3d(0, -100%, 0);
+       transform: translate3d(0, -100%, 0);
+opacity: 1;
+}
+
+.container-checkbox input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+.checkmark-box {
+ position: absolute;
+ top: -5px;
+ left: 0;
+ height: 25px;
+ width: 25px;
+ background-color: #adadad;
+}
+.container-checkbox {
+ display: block;
+ position: relative;
+ padding-left: 40px;
+ margin-bottom: 20px;
+ cursor: pointer;
+ font-size: 18px;
+ font-weight: bold;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ line-height: 1.1;
+}
+.container-checkbox input:checked ~ .checkmark-box:after {
+ color: #fff;
+}
+.container-checkbox input:checked ~ .checkmark-box:after {
+ display: block;
+}
+.container-checkbox .checkmark-box:after {
+ left: 10px;
+ top: 4px;
+ width: 7px;
+ height: 15px;
+ border: solid white;
+ border-width: 0 3px 3px 0;
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+}
+.checkmark:after, .checkmark-box:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+.container-checkbox input:checked ~ .checkmark-box {
+ background-color: #D23600; /* #f58220; */
+ border: 0px solid transparent;
+}
+.btn-check-log .btn-check-login {
+ font-size: 16px;
+ padding: 10px 0;
+}
+.btn-check-login:hover {
+    color: #fff;
+    background-color: #D23600; /* #f58220; */
+    border: 2px solid #D23600; /* #f58220; */
+}
+.btn-check-login {
+ color: #ffffff; /* #f58220; */
+ background-color: transparent;
+ border: 2px solid #D23600; /* #f58220; */
+ transition: all ease-in-out .3s;
+}
+.btn-check-login {
+ display: inline-block;
+ padding: 12px 0;
+ margin-bottom: 0;
+ line-height: 1.42857143;
+ text-align: center;
+ white-space: nowrap;
+ vertical-align: middle;
+ -ms-touch-action: manipulation;
+ touch-action: manipulation;
+ cursor: pointer;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ background-image: none;
+ border-radius: 0;
+ width: 100%;
+}
+.forgot-pass-fau a {
+    text-decoration: none !important;
+    font-size: 14px;
+}
+.text-primary-fau {
+    color: #ffffff;
+	font-size: 18px;
+}
+.select-form-control-placeholder{
+  font-size: 100%;
+    padding: 7px 0 0 13px;
+    margin: 0;
+}
+.readmore {
+	background: url("../images/sm-readmore-button.png") no-repeat 0 0;
+	display: block;
+	width: 115px;
+	height: 65px;
+	color: #9d9d9d;
+	font-size: 12px;
+	text-align: center;
+	margin: auto;
+	line-height: 40px;
+	background-position: 5px -5px;
+}
+
+.readmore:hover {
+	color: #000000;
+}
+
+.readmore:visited {
+	color: #ffffff;
+}
+
+
+#validation_success_message, #validation_error, #login_error_message, #login_success_message {
+	text-align: center;
+	margin: 15px;
+	font-size: 18px;
+	word-wrap: break-word;
+}
+
+#login_container
+{
+	display:inline; 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden;
+}
+/* Lottery Ball Backgronnds */
+
+.white_ball_container 
+{
+	position: relative;
+  	text-align: center;
+	width:50px; 
+	height:50px;
+	margin-right: 1em; 
+}
+
+.red_ball_container 
+{
+	position: relative;
+  	text-align: center;
+	width:50px; 
+	height:50px;
+	margin-right: 1em; 
+}
+
+.blur {
+	display: block; 
+	width: 90%;
+	-webkit-filter: blur(5px);
+  	filter: blur(5px);
+}
+
+#lotto_one h1 {
+	color: #ffffff;
+	padding:0; 
+	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+}
+
+.lottery_number 
+{
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	font-weight: bold;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+/* Home Border for Tabs */
+.home-tabs-background 
+{
+	background-color: #484848;
+	margin-bottom: 10px;
+}
+.home-tabs-title { 
+	color: #ffffff;
+	font-size: 22px;
+	text-align: left;
+	padding: 10px 0px 0px 15px;}
+
+.tab-content {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+	width: 100%;
+}
+.nav-tabs .nav-item {
+	margin-bottom: 0;
+	margin-left: 10px;
+}
+/* Wins Table Parameters */
+.wins {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #c44b5d;
+	text-align: center;
+}
+.win-value {
+	font-family: 'Erbos Draco 1st Open NBP';
+    font-weight: normal;
+    font-style: normal;
+	font-size: 24px;
+	color: #e70000;
+	text-align: center;
+	padding: 10px;
+}
+.table-bordered
+{
+	table-layout: fixed; 
+	width: 100%;
+	height: 100%;
+}
+.draws-title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #c44b5d;
+	text-align: center;
+}
+.draws-title-number {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: left;
+}
+.draw-date-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: left;
+}
+.draw-numbers {
+	font-family: 'Erbos Draco 1st Open NBP';
+    font-weight: normal;
+	font-style: normal;
+	padding-left: 10px;
+	font-size: 14px;
+	text-align: left;
+}
+.win-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #c44b5d;
+	text-align: center;
+}
+
+.number-of-wins {
+	font-family: 'Erbos Draco 1st Open NBP';
+    font-weight: normal;
+    font-style: normal;
+	font-size: 30px;
+	color: #ffffff;
+}
+.win-number {
+	color: #e70000;
+}
+
+.draw-date {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #c44b5d;
+	text-align: center;
+}
+
+.draw-date-numbers {
+	font-family: 'Erbos Draco 1st Open NBP';
+    font-weight: normal;
+	font-style: normal;
+	padding-left: 10px;
+	font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+}
