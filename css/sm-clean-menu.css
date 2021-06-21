@@ -324,5 +324,8 @@
     background: #fff;
   }
 }
-
 /*# sourceMappingURL=sm-clean.css.map */
+a.disabled {  /* maintenance mode only */
+  pointer-events: none;
+  cursor: default;
+}
