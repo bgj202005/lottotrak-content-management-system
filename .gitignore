@@ -38,6 +38,8 @@ index.php
 /.metadata/
 /.settings/
 /.vscode/
+/.tmp.drivedownload/
+/.tmp.driveupload/
 /_notes/
 /RemoteSystemsTempFiles/
 /tinymce/
@@ -48,4 +50,4 @@ deploy.php
 /.tmp.drivedownload/
 /combinations/
 /visitor_ips/
-.gitignore
+
