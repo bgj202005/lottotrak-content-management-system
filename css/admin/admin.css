@@ -294,9 +294,10 @@ text-align: left;
     content: "\f077"; /* fa-chevron-up */
   }
   .progress {
-	height:25px;
+	height:50px;
 	margin-left: auto; margin-right:auto;
    } 
    #process_data, #total_data {
 	color:#f00000;
+    font-size:x-large;
 } 
