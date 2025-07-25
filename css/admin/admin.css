@@ -452,3 +452,57 @@ text-align: left;
 		padding: 0.75rem !important;
 	}
 }
+
+/* Statistics display styling for Last Draw Statistics */
+.stat-item {
+	text-align: center;
+	padding: 0.5rem;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 6px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+	background: rgba(255, 255, 255, 0.1);
+	border-color: rgba(255, 255, 255, 0.2);
+	transform: translateY(-2px);
+}
+
+.stat-value {
+	font-family: 'Erbos Draco 1st Open NBP', Arial, Helvetica, sans-serif;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #17a2b8;
+	display: block;
+	margin-top: 0.25rem;
+}
+
+.text-muted {
+	color: #adb5bd !important;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+/* Mobile adjustments for statistics */
+@media (max-width: 767.98px) {
+	.stat-value {
+		font-size: 1.2rem;
+	}
+	
+	.stat-item {
+		padding: 0.3rem;
+		margin-bottom: 0.5rem;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.stat-value {
+		font-size: 1rem;
+	}
+	
+	.text-muted {
+		font-size: 0.75rem;
+	}
+}
