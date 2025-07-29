@@ -780,6 +780,485 @@ opacity: 1;
 /* Mobile-Responsive Modal Styles */
 /* ======================================================== */
 
+/* Mobile Navigation & Header Improvements */
+@media (max-width: 767px) {
+	.navbar-brand {
+		font-size: 11px !important;
+		padding: 10px 10px 10px 200px !important;
+		background-size: 180px auto !important;
+		height: 50px !important;
+	}
+	
+	header .row {
+		margin: 0 !important;
+	}
+	
+	header .col-lg-5, header .col-md-6 {
+		padding: 0.5rem !important;
+	}
+}
+
+/* Header Button Positioning Improvements */
+header .col-lg-2, header .col-md-2 {
+	padding-right: 1.5rem !important; /* Add space from right edge */
+}
+
+@media (max-width: 991px) {
+	header .col-lg-2, header .col-md-2 {
+		padding-right: 1rem !important;
+		padding-left: 1rem !important;
+	}
+}
+
+@media (max-width: 767px) {
+	header .col-lg-2, header .col-md-2, header .col-sm-12 {
+		padding: 1rem !important; /* Add padding on all sides for mobile */
+		text-align: center !important;
+	}
+}
+
+/* Mobile Hamburger Menu Styles */
+.mobile-menu-toggle {
+	display: none;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	cursor: pointer;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	z-index: 9999;
+}
+
+.mobile-menu-toggle:focus {
+	outline: none;
+}
+
+.mobile-menu-toggle span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin: 4px 0;
+	transition: 0.3s;
+	transform-origin: center;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+	transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+	opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+	transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Modal close button positioning */
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #999;
+    text-shadow: none;
+    opacity: 0.8;
+    z-index: 1051;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: #D23600;
+    opacity: 1;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+/* Ensure modal body has relative positioning for absolute close button */
+.modal-body {
+    position: relative;
+}
+
+/* Add some top padding to modal titles to avoid overlap with close button */
+.modal-title {
+    padding-right: 50px;
+    margin-top: 10px;
+}
+
+/* Desktop navigation menu hover effects */
+.desktop-nav nav a {
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.desktop-nav nav a:hover {
+    background: rgba(255,255,255,0.1);
+    color: #D23600 !important;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.desktop-nav nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #D23600;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.desktop-nav nav a:hover::after {
+    width: 80%;
+}
+
+/* Sidebar article headlines styling */
+.sidebar-section h3,
+.sidebar-section .sidebar-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #D23600;
+    padding-bottom: 8px;
+}
+
+.sidebar-section .article-headline,
+.sidebar-section .news-item,
+.sidebar-section .article-link {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar-section .article-headline:last-child,
+.sidebar-section .news-item:last-child,
+.sidebar-section .article-link:last-child {
+    border-bottom: none;
+}
+
+.sidebar-section .article-headline a,
+.sidebar-section .news-item a,
+.sidebar-section .article-link a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.sidebar-section .article-headline a:hover,
+.sidebar-section .news-item a:hover,
+.sidebar-section .article-link a:hover {
+    color: #D23600;
+    text-decoration: none;
+}
+
+/* Body scroll prevention for mobile menu */
+body.mobile-menu-open {
+	overflow: hidden;
+}
+
+/* Enhanced Mobile Navigation Menu */
+.mobile-nav-menu {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 50%, #34495e 100%);
+	z-index: 9998;
+	overflow-y: auto;
+	animation: slideInLeft 0.3s ease;
+}
+
+@keyframes slideInLeft {
+	from { transform: translateX(-100%); }
+	to { transform: translateX(0); }
+}
+
+.mobile-nav-menu.active {
+	display: block;
+}
+
+.mobile-menu-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	background: rgba(0,0,0,0.3);
+	border-bottom: 2px solid #D23600;
+}
+
+.mobile-menu-header h4 {
+	color: #D23600;
+	font-weight: 700;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.mobile-menu-close {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+	padding: 5px 10px;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+
+.mobile-menu-close:hover {
+	background: rgba(210, 54, 0, 0.8);
+	transform: rotate(90deg);
+}
+
+.mobile-menu-content {
+	padding: 1rem 0;
+}
+
+.mobile-nav-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.mobile-nav-list li {
+	margin: 0;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-nav-list li:last-child {
+	border-bottom: none;
+}
+
+.mobile-nav-list li a {
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	padding: 1rem 2rem;
+	transition: all 0.3s ease;
+	border-left: 4px solid transparent;
+}
+
+.mobile-nav-list li a i {
+	margin-right: 15px;
+	width: 20px;
+	color: #D23600;
+	font-size: 1rem;
+}
+
+.mobile-nav-list li a:hover {
+	background: linear-gradient(90deg, rgba(210, 54, 0, 0.2), transparent);
+	color: #D23600;
+	text-decoration: none;
+	border-left-color: #D23600;
+	transform: translateX(10px);
+}
+
+.mobile-auth-buttons {
+	padding: 2rem;
+	border-top: 2px solid rgba(255,255,255,0.2);
+	margin-top: 1rem;
+	background: rgba(0,0,0,0.2);
+}
+
+.user-welcome {
+	background: rgba(210, 54, 0, 0.1);
+	padding: 1rem;
+	border-radius: 8px;
+	border: 1px solid rgba(210, 54, 0, 0.3);
+}
+
+.user-welcome i {
+	font-size: 2rem;
+	color: #D23600;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.mobile-auth-buttons .btn {
+	display: block;
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	font-size: 1.1rem;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	border-radius: 8px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.mobile-auth-buttons .btn i {
+	margin-right: 8px;
+}
+
+.mobile-auth-buttons .btn-primary {
+	background: linear-gradient(45deg, #D23600, #f39c12);
+	border: none;
+	box-shadow: 0 4px 15px rgba(210, 54, 0, 0.3);
+}
+
+.mobile-auth-buttons .btn-primary:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 20px rgba(210, 54, 0, 0.4);
+}
+
+.mobile-auth-buttons .btn-outline-primary {
+	border: 2px solid #D23600;
+	color: #D23600;
+	background: transparent;
+}
+
+.mobile-auth-buttons .btn-outline-primary:hover {
+	background: #D23600;
+	border-color: #D23600;
+	color: white;
+	transform: translateY(-3px);
+	box-shadow: 0 6px 20px rgba(210, 54, 0, 0.4);
+}
+
+.mobile-auth-buttons .btn-outline-light:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 767px) {
+	.mobile-menu-toggle {
+		display: block !important;
+	}
+	
+	.desktop-nav {
+		display: none !important;
+	}
+	
+	.desktop-auth-buttons {
+		display: none !important;
+	}
+}
+
+/* Content Area Improvements */
+.content-inner {
+	background:url(../images/content-bg.png) repeat center top;
+	padding: 54px 25px 30px 25px !important; /* Increased side padding */
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	max-width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+/* Main Content Area Mobile Responsiveness */
+@media (max-width: 991px) {
+	.content-inner {
+		padding: 30px 20px 25px 20px !important;
+		margin: 0 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.content-inner {
+		padding: 20px 15px 20px 15px !important;
+		margin: 0 5px;
+	}
+	
+	/* Ensure content doesn't extend beyond background */
+	.col-xs-12.col-md-9, .col-xs-12.col-md-8 {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+}
+
+/* Sidebar Improvements */
+.sidebar-section {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+}
+
+.sidebar-title {
+	color: #fff !important;
+	font-size: 1.2rem !important;
+	margin-bottom: 1rem !important;
+	white-space: nowrap !important;
+	text-overflow: ellipsis !important;
+	overflow: hidden !important;
+	border-bottom: 2px solid #D23600;
+	padding-bottom: 0.5rem;
+}
+
+.news-archive-link {
+	margin-bottom: 1rem;
+}
+
+.news-archive-link .btn {
+	font-size: 0.9rem;
+	padding: 0.375rem 0.75rem;
+}
+
+.news-links {
+	padding: 0;
+}
+
+.sidebar-content {
+	margin-top: 1rem;
+}
+
+.sidebar-content .sidebar-section {
+	background: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 8px;
+}
+
+/* Mobile Sidebar Improvements */
+@media (max-width: 767px) {
+	.sidebar {
+		margin-top: 2rem;
+		padding: 0 15px;
+	}
+	
+	.sidebar-title {
+		font-size: 1.1rem !important;
+		text-align: center;
+	}
+	
+	.sidebar-section {
+		padding: 0.75rem;
+	}
+}
+
 /* General Modal Improvements for All Devices */
 .seminor-login-modal {
 	overflow-x: hidden !important;
@@ -800,6 +1279,56 @@ opacity: 1;
 .seminor-login-modal .modal-content {
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
 	border: none !important;
+	background-color: #343a40 !important;
+}
+
+.seminor-login-modal .form-control {
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: 2px solid #adadad !important;
+	border-radius: 0 !important;
+	color: #fff !important;
+	font-size: 16px !important;
+	padding: 12px 0 !important;
+}
+
+.seminor-login-modal .form-control:focus {
+	background-color: transparent !important;
+	border-color: #D23600 !important;
+	box-shadow: 0 2px 4px rgba(210, 54, 0, 0.3) !important;
+	color: #fff !important;
+}
+
+.seminor-login-modal .form-control::placeholder {
+	color: #adadad !important;
+	opacity: 1 !important;
+}
+
+.seminor-login-modal .btn-primary {
+	background-color: #D23600 !important;
+	border-color: #D23600 !important;
+	font-weight: bold !important;
+	text-transform: uppercase !important;
+}
+
+.seminor-login-modal .btn-primary:hover {
+	background-color: #a11d00 !important;
+	border-color: #a11d00 !important;
+}
+
+.seminor-login-modal .alert {
+	margin: 1rem 0 !important;
+	border-radius: 8px !important;
+}
+
+.text-primary-fau {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.text-primary-fau:hover {
+	color: #D23600 !important;
+	text-decoration: underline !important;
 }
 
 /* Tablet Styles (768px - 991px) */
@@ -821,26 +1350,10 @@ opacity: 1;
 		border-radius: 8px !important;
 	}
 	
-	.form-control-placeholder {
-		font-size: 16px !important;
-		padding: 8px 0 0 15px !important;
-	}
-	
-	.seminor-login-form .form-control {
-		font-size: 16px !important;
-		padding: 12px 15px !important;
-		height: auto !important;
-	}
-	
-	.btn-check-login {
-		font-size: 18px !important;
-		padding: 15px 0 !important;
-		margin-top: 1rem !important;
-	}
-	
 	.modal-title {
 		font-size: 1.5rem !important;
 		margin-bottom: 1rem !important;
+		color: #fff !important;
 	}
 }
 
@@ -867,37 +1380,15 @@ opacity: 1;
 		border-radius: 12px !important;
 		margin: 0 !important;
 		min-height: auto !important;
+		background-color: #343a40 !important;
 	}
 	
-	.seminor-login-form {
+	.seminor-login-form, .seminor-forgotpassword-form {
 		padding: 1rem 0 0 !important;
 	}
 	
-	.seminor-login-form .form-group {
+	.seminor-login-form .form-group, .seminor-forgotpassword-form .form-group {
 		margin-bottom: 2rem !important;
-	}
-	
-	.seminor-login-form .form-control {
-		font-size: 16px !important;
-		padding: 15px 15px !important;
-		height: auto !important;
-		border-bottom: 2px solid #adadad !important;
-		background-color: transparent !important;
-		color: #fff !important;
-	}
-	
-	.form-control-placeholder {
-		font-size: 16px !important;
-		padding: 10px 0 0 15px !important;
-		color: #adadad !important;
-	}
-	
-	.btn-check-login {
-		font-size: 18px !important;
-		padding: 18px 0 !important;
-		margin-top: 1.5rem !important;
-		border-width: 3px !important;
-		touch-action: manipulation !important;
 	}
 	
 	.modal-title {
@@ -909,59 +1400,30 @@ opacity: 1;
 	
 	.seminor-login-modal-body .close {
 		font-size: 2rem !important;
-		top: -35px !important;
-		right: 5px !important;
-		left: auto !important;
+		top: 15px !important;
+		right: 15px !important;
 		position: absolute !important;
 		padding: 10px !important;
 		line-height: 1 !important;
 		z-index: 1050 !important;
-		touch-action: manipulation !important;
-	}
-	
-	.container-checkbox {
-		font-size: 16px !important;
-		padding-left: 45px !important;
-		margin-bottom: 25px !important;
-		line-height: 1.3 !important;
 		color: #fff !important;
+		opacity: 0.8 !important;
 	}
 	
-	.checkmark-box {
-		width: 30px !important;
-		height: 30px !important;
-		top: -2px !important;
+	.seminor-login-modal-body .close:hover {
+		color: #D23600 !important;
+		opacity: 1 !important;
 	}
 	
-	.container-checkbox .checkmark-box:after {
-		left: 12px !important;
-		top: 6px !important;
-		width: 8px !important;
-		height: 18px !important;
-	}
-	
-	.forgot-pass-fau a, .create-new-fau a {
-		font-size: 16px !important;
+	.custom-control-label {
 		color: #fff !important;
-	}
-	
-	.text-primary-fau {
 		font-size: 16px !important;
-		color: #fff !important;
+		padding-left: 0.5rem !important;
 	}
 	
-	/* Improve touch targets */
-	.form-control:focus {
-		border-bottom: 2px solid #D23600 !important;
-		box-shadow: 0 2px 4px rgba(210, 54, 0, 0.2) !important;
-		outline: none !important;
-	}
-	
-	/* Prevent zoom on input focus for iOS */
-	.seminor-login-form input,
-	.seminor-login-form select,
-	.seminor-login-form textarea {
-		font-size: 16px !important;
+	.custom-control-input:checked ~ .custom-control-label::before {
+		background-color: #D23600 !important;
+		border-color: #D23600 !important;
 	}
 	
 	/* Modal backdrop adjustments for mobile */
@@ -973,6 +1435,13 @@ opacity: 1;
 	body.modal-open {
 		padding-right: 0 !important;
 		overflow: hidden !important;
+	}
+	
+	/* Login container mobile improvements */
+	#login_container {
+		list-style: none !important;
+		margin: 0 !important;
+		padding: 0 !important;
 	}
 }
 
