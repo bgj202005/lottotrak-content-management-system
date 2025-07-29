@@ -240,7 +240,7 @@ a:hover {text-decoration:none;}
 	border-radius:15px;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
-	max-width: 960px;
+	max-width: 1200px;
 }
 
 .col-centered{
@@ -276,7 +276,7 @@ footer {
 .footer-inner {
 	color:#5e5e5e;
 	padding: 12px 30px 20px; 
-	max-width: 960px;
+	max-width: 1200px;
 	text-align:center;	
 }
 
@@ -775,4 +775,256 @@ opacity: 1;
 	letter-spacing: 0.05em !important;
 	text-transform: uppercase !important;
 	font-variant: small-caps !important;
+}
+
+/* Mobile-Responsive Modal Styles */
+/* ======================================================== */
+
+/* General Modal Improvements for All Devices */
+.seminor-login-modal {
+	overflow-x: hidden !important;
+	overflow-y: auto !important;
+}
+
+.seminor-login-modal .modal-dialog {
+	transition: all 0.3s ease-in-out !important;
+	transform: translateY(-25px) !important;
+	opacity: 0 !important;
+}
+
+.seminor-login-modal.show .modal-dialog {
+	transform: translateY(0) !important;
+	opacity: 1 !important;
+}
+
+.seminor-login-modal .modal-content {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+	border: none !important;
+}
+
+/* Tablet Styles (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+	.seminor-login-modal .modal-dialog {
+		max-width: 90% !important;
+		margin: 2rem auto !important;
+	}
+	
+	.seminor-login-modal-body {
+		padding: 2rem 1.5rem !important;
+	}
+	
+	.seminor-login-form .form-group {
+		margin-bottom: 1.8rem !important;
+	}
+	
+	.seminor-login-modal .modal-dialog .modal-content {
+		border-radius: 8px !important;
+	}
+	
+	.form-control-placeholder {
+		font-size: 16px !important;
+		padding: 8px 0 0 15px !important;
+	}
+	
+	.seminor-login-form .form-control {
+		font-size: 16px !important;
+		padding: 12px 15px !important;
+		height: auto !important;
+	}
+	
+	.btn-check-login {
+		font-size: 18px !important;
+		padding: 15px 0 !important;
+		margin-top: 1rem !important;
+	}
+	
+	.modal-title {
+		font-size: 1.5rem !important;
+		margin-bottom: 1rem !important;
+	}
+}
+
+/* Mobile Phone Styles (up to 767px) */
+@media (max-width: 767px) {
+	.seminor-login-modal {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	
+	.seminor-login-modal .modal-dialog {
+		max-width: 95% !important;
+		margin: 1rem auto !important;
+		width: 95% !important;
+		position: relative !important;
+	}
+	
+	.seminor-login-modal-body {
+		padding: 1.5rem 1rem !important;
+		position: relative !important;
+	}
+	
+	.seminor-login-modal .modal-dialog .modal-content {
+		border-radius: 12px !important;
+		margin: 0 !important;
+		min-height: auto !important;
+	}
+	
+	.seminor-login-form {
+		padding: 1rem 0 0 !important;
+	}
+	
+	.seminor-login-form .form-group {
+		margin-bottom: 2rem !important;
+	}
+	
+	.seminor-login-form .form-control {
+		font-size: 16px !important;
+		padding: 15px 15px !important;
+		height: auto !important;
+		border-bottom: 2px solid #adadad !important;
+		background-color: transparent !important;
+		color: #fff !important;
+	}
+	
+	.form-control-placeholder {
+		font-size: 16px !important;
+		padding: 10px 0 0 15px !important;
+		color: #adadad !important;
+	}
+	
+	.btn-check-login {
+		font-size: 18px !important;
+		padding: 18px 0 !important;
+		margin-top: 1.5rem !important;
+		border-width: 3px !important;
+		touch-action: manipulation !important;
+	}
+	
+	.modal-title {
+		font-size: 1.4rem !important;
+		margin-bottom: 1.5rem !important;
+		text-align: center !important;
+		color: #fff !important;
+	}
+	
+	.seminor-login-modal-body .close {
+		font-size: 2rem !important;
+		top: -35px !important;
+		right: 5px !important;
+		left: auto !important;
+		position: absolute !important;
+		padding: 10px !important;
+		line-height: 1 !important;
+		z-index: 1050 !important;
+		touch-action: manipulation !important;
+	}
+	
+	.container-checkbox {
+		font-size: 16px !important;
+		padding-left: 45px !important;
+		margin-bottom: 25px !important;
+		line-height: 1.3 !important;
+		color: #fff !important;
+	}
+	
+	.checkmark-box {
+		width: 30px !important;
+		height: 30px !important;
+		top: -2px !important;
+	}
+	
+	.container-checkbox .checkmark-box:after {
+		left: 12px !important;
+		top: 6px !important;
+		width: 8px !important;
+		height: 18px !important;
+	}
+	
+	.forgot-pass-fau a, .create-new-fau a {
+		font-size: 16px !important;
+		color: #fff !important;
+	}
+	
+	.text-primary-fau {
+		font-size: 16px !important;
+		color: #fff !important;
+	}
+	
+	/* Improve touch targets */
+	.form-control:focus {
+		border-bottom: 2px solid #D23600 !important;
+		box-shadow: 0 2px 4px rgba(210, 54, 0, 0.2) !important;
+		outline: none !important;
+	}
+	
+	/* Prevent zoom on input focus for iOS */
+	.seminor-login-form input,
+	.seminor-login-form select,
+	.seminor-login-form textarea {
+		font-size: 16px !important;
+	}
+	
+	/* Modal backdrop adjustments for mobile */
+	.modal-backdrop {
+		background-color: rgba(0, 0, 0, 0.7) !important;
+	}
+	
+	/* Prevent body scroll when modal is open */
+	body.modal-open {
+		padding-right: 0 !important;
+		overflow: hidden !important;
+	}
+}
+
+/* Extra Small Mobile Phones (up to 480px) */
+@media (max-width: 480px) {
+	.seminor-login-modal .modal-dialog {
+		max-width: 98% !important;
+		margin: 0.5rem auto !important;
+		width: 98% !important;
+	}
+	
+	.seminor-login-modal-body {
+		padding: 1rem 0.8rem !important;
+	}
+	
+	.modal-title {
+		font-size: 1.2rem !important;
+		margin-bottom: 1rem !important;
+	}
+	
+	.seminor-login-form .form-group {
+		margin-bottom: 1.5rem !important;
+	}
+	
+	.seminor-login-form .form-control {
+		padding: 12px 10px !important;
+	}
+	
+	.form-control-placeholder {
+		padding: 8px 0 0 10px !important;
+		font-size: 14px !important;
+	}
+	
+	.btn-check-login {
+		font-size: 16px !important;
+		padding: 15px 0 !important;
+	}
+	
+	.container-checkbox {
+		font-size: 14px !important;
+		padding-left: 40px !important;
+	}
+	
+	.checkmark-box {
+		width: 25px !important;
+		height: 25px !important;
+	}
+	
+	.container-checkbox .checkmark-box:after {
+		left: 10px !important;
+		top: 5px !important;
+		width: 7px !important;
+		height: 15px !important;
+	}
 }
