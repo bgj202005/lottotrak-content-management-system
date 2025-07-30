@@ -255,6 +255,135 @@ margin: 0 auto;
   text-align: center;		
 }
 
+/* Homepage Bottom Sections Styling */
+/* ======================================================== */
+
+.bottom-sections {
+	margin-top: 2rem;
+	padding: 0 15px;
+}
+
+.bottom-section-full {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.bottom-full-content {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	padding: 2rem;
+	text-align: center;
+}
+
+.bottom-section-left,
+.bottom-section-middle,
+.bottom-section-right {
+	margin-bottom: 2rem;
+	padding: 0 10px;
+}
+
+.bottom-left-content,
+.bottom-middle-content,
+.bottom-right-content {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	padding: 1.5rem;
+	min-height: 200px;
+	height: 100%;
+}
+
+.bottom-section-title h2 {
+	color: #D23600;
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.bottom-section-title h3 {
+	color: #D23600;
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.bottom-section-body {
+	color: #fff;
+	line-height: 1.6;
+}
+
+.bottom-section-body p {
+	margin-bottom: 1rem;
+}
+
+.bottom-section-body a {
+	color: #D23600;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.bottom-section-body a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Mobile responsive for bottom sections */
+@media (max-width: 767px) {
+	.bottom-sections {
+		margin-top: 1rem;
+		padding: 0 10px;
+	}
+	
+	.bottom-full-content {
+		padding: 1.5rem;
+	}
+	
+	.bottom-left-content,
+	.bottom-middle-content,
+	.bottom-right-content {
+		padding: 1rem;
+		min-height: auto;
+		margin-bottom: 1rem;
+	}
+	
+	.bottom-section-title h2 {
+		font-size: 1.4rem;
+	}
+	
+	.bottom-section-title h3 {
+		font-size: 1.2rem;
+	}
+}
+
+/* Tablet responsive for bottom sections */
+@media (min-width: 768px) and (max-width: 991px) {
+	.bottom-sections {
+		padding: 0 12px;
+	}
+	
+	.bottom-section-left,
+	.bottom-section-middle,
+	.bottom-section-right {
+		padding: 0 8px;
+	}
+}
+
+/* Large desktop responsive for bottom sections */
+@media (min-width: 1200px) {
+	.bottom-sections {
+		padding: 0 20px;
+	}
+	
+	.bottom-section-left,
+	.bottom-section-middle,
+	.bottom-section-right {
+		padding: 0 15px;
+	}
+}
+
 /*********************** Pagination ************************/
 .page-item .page-link {
 	color: #000; 	
