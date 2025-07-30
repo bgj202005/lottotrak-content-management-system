@@ -402,18 +402,28 @@ footer {
 	padding:29px 0 30px;
 }
 
-.footer-inner {
+footer .footer-inner {
 	color:#5e5e5e;
 	padding: 12px 30px 20px; 
 	max-width: 1200px;
-	text-align:center;	
+	text-align:center;
+	margin: 0 auto;	
 }
 
 .footer-menu {padding: 0 0 42px 220px; list-style-type: none; }
 
+.footer-menu {
+	padding: 0 0 42px 0; 
+	list-style-type: none; 
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
 .footer-menu li {
 	background:url(../images/separator-2.gif) no-repeat left 3px;
-	float:left;
+	display: inline-block;
+	float: none;
 	padding: 0 7px 0 8px;
 }
 
@@ -429,6 +439,39 @@ footer {
 }
 
 .footer-menu li a:hover {color:#FFF;}
+
+/* Footer menu responsive styles */
+@media (max-width: 767px) {
+	.footer-menu {
+		padding: 0 0 20px 0;
+	}
+	
+	.footer-menu li {
+		display: block;
+		background: none;
+		padding: 5px 0;
+		border-bottom: 1px solid #333;
+	}
+	
+	.footer-menu li:last-child {
+		border-bottom: none;
+	}
+	
+	.footer-menu li a {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.footer-menu li {
+		padding: 0 5px 0 6px;
+	}
+	
+	.footer-menu li a {
+		font-size: 11px;
+	}
+}
 
 
 /***** Lightbox image *****/
