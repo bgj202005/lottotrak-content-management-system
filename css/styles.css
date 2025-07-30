@@ -858,6 +858,65 @@ header .col-lg-2, header .col-md-2 {
 	transform: rotate(-45deg) translate(6px, -6px);
 }
 
+/* Modal responsive sizing and mobile optimization */
+.modal-dialog {
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+.modal-dialog.modal-md {
+    max-width: 400px;
+}
+
+/* Mobile modal adjustments */
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: 95%;
+        margin: 0.5rem auto;
+        width: 95%;
+    }
+    
+    .modal-dialog.modal-md {
+        max-width: 95%;
+        width: 95%;
+    }
+    
+    .modal-content {
+        margin: 0;
+        border-radius: 10px;
+    }
+    
+    .modal-body {
+        padding: 1.5rem 1rem;
+    }
+    
+    .modal-title {
+        font-size: 1.25rem;
+        padding-right: 40px;
+    }
+    
+    .seminor-login-form .form-control {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 0.75rem;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Ensure modals don't cause horizontal scroll */
+.modal {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.modal-open {
+    overflow-y: auto;
+    padding-right: 0 !important;
+}
+
 /* Modal close button positioning */
 .modal .close {
     position: absolute;
@@ -979,9 +1038,61 @@ header .col-lg-2, header .col-md-2 {
     text-decoration: none;
 }
 
-/* Body scroll prevention for mobile menu */
-body.mobile-menu-open {
-	overflow: hidden;
+/* Enhanced mobile modal styling */
+@media (max-width: 767px) {
+    .seminor-login-modal .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+        width: calc(100% - 1rem);
+    }
+    
+    .seminor-login-modal .modal-content {
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    
+    .seminor-login-modal-body {
+        padding: 1.5rem 1.25rem;
+    }
+    
+    .modal .close {
+        top: 8px;
+        right: 12px;
+        font-size: 1.5rem;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .modal-title {
+        font-size: 1.1rem;
+        padding-right: 35px;
+        margin-top: 5px;
+    }
+    
+    .seminor-login-form .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .btn-check-log .btn {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+    
+    /* Prevent zoom on form inputs for iOS */
+    .form-control {
+        font-size: 16px !important;
+    }
+}
+
+/* Compact modal styling for desktop */
+@media (min-width: 768px) {
+    .modal-dialog.modal-md {
+        max-width: 450px;
+    }
+    
+    .seminor-login-modal-body {
+        padding: 2rem 2.5rem;
+    }
 }
 
 /* Enhanced Mobile Navigation Menu */
