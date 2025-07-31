@@ -1820,3 +1820,212 @@ header .col-lg-2, header .col-md-2 {
 		height: 15px !important;
 	}
 }
+
+/* ======================================================== */
+/* LOTTERY ARTICLE STYLING - Enhanced for Black Background */
+/* ======================================================== */
+
+/* Individual Article Page Styling */
+.lottery-article {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+	padding: 30px;
+	margin-bottom: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.article-header {
+	border-bottom: 2px solid #D23600;
+	padding-bottom: 20px;
+	margin-bottom: 25px;
+}
+
+.article-title {
+	color: #ffffff !important;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.3;
+	margin-bottom: 15px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.article-pubdate {
+	color: #cccccc !important;
+	font-size: 14px;
+	margin-bottom: 0;
+	font-style: italic;
+}
+
+.article-pubdate i {
+	color: #D23600;
+	margin-right: 8px;
+}
+
+.article-content {
+	color: #e6e6e6 !important;
+	font-size: 15px;
+	line-height: 1.7;
+	text-align: justify;
+}
+
+.article-content p {
+	margin-bottom: 20px;
+	color: #e6e6e6 !important;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+	color: #ffffff !important;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.article-content h2 {
+	color: #D23600 !important;
+	border-bottom: 1px solid rgba(210, 54, 0, 0.3);
+	padding-bottom: 5px;
+}
+
+.article-raw-content {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+	border-left: 4px solid #D23600;
+	color: #e6e6e6 !important;
+}
+
+/* Article Listing Styling */
+.article-listing {
+	margin-top: 20px;
+}
+
+.lottery-article-preview {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	padding: 25px;
+	margin-bottom: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	transition: all 0.3s ease;
+}
+
+.lottery-article-preview:hover {
+	background: rgba(0, 0, 0, 0.4);
+	border-color: rgba(210, 54, 0, 0.3);
+	transform: translateY(-2px);
+}
+
+.article-preview-header {
+	margin-bottom: 15px;
+}
+
+.article-preview-title {
+	margin-bottom: 10px;
+}
+
+.article-preview-title a {
+	color: #ffffff !important;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	transition: color 0.3s ease;
+}
+
+.article-preview-title a:hover {
+	color: #D23600 !important;
+	text-decoration: none;
+}
+
+.article-preview-date {
+	color: #cccccc !important;
+	font-size: 13px;
+	margin-bottom: 0;
+	font-style: italic;
+}
+
+.article-preview-date i {
+	color: #D23600;
+	margin-right: 6px;
+}
+
+.article-preview-content {
+	color: #e6e6e6 !important;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.article-preview-content p {
+	color: #e6e6e6 !important;
+	margin-bottom: 15px;
+}
+
+.article-preview-footer {
+	text-align: right;
+}
+
+.read-more-btn {
+	background: linear-gradient(45deg, #D23600, #ff4500);
+	color: #ffffff !important;
+	padding: 8px 16px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	display: inline-block;
+	transition: all 0.3s ease;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.read-more-btn:hover {
+	background: linear-gradient(45deg, #ff4500, #D23600);
+	color: #ffffff !important;
+	text-decoration: none;
+	transform: translateX(3px);
+}
+
+.read-more-btn i {
+	margin-left: 5px;
+	transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover i {
+	transform: translateX(3px);
+}
+
+.article-divider {
+	border: none;
+	height: 1px;
+	background: linear-gradient(to right, transparent, rgba(210, 54, 0, 0.3), transparent);
+	margin: 30px 0;
+}
+
+.pagination-section {
+	background: rgba(0, 0, 0, 0.2);
+	padding: 15px;
+	border-radius: 5px;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.pagination-section a {
+	color: #ffffff !important;
+	background: rgba(210, 54, 0, 0.8);
+	padding: 8px 12px;
+	margin: 0 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.pagination-section a:hover {
+	background: #D23600;
+	color: #ffffff !important;
+	text-decoration: none;
+}
