@@ -3,11 +3,18 @@
 @import"menu-style.css";
 @font-face {
     font-family: 'Erbos Draco 1st Open NBP';
-    src: url('http://localhost/lottotrak/css/fonts/Erbos-Draco-1st-Open-NBP.woff2') format('woff2'),
-        url('http://localhost/lottotrak/css/fonts/Erbos-Draco-1st-Open-NBP.woff') format('woff');
+    src: url('fonts/Erbos-Draco-1st-Open-NBP.woff2') format('woff2'),
+        url('fonts/Erbos-Draco-1st-Open-NBP.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Erbos light_led_board-7';
+    src: url('fonts/light_led_board-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
 mark, rp, rt, ruby, summary, time {display:inline;}
@@ -761,7 +768,9 @@ opacity: 1;
   	text-align: center;
 	width:50px; 
 	height:50px;
-	margin-right: 1em; 
+	margin-right: 1em;
+	background: url('../images/white-ball.png') no-repeat center center;
+	background-size: contain;
 }
 
 .red_ball_container 
@@ -770,7 +779,9 @@ opacity: 1;
   	text-align: center;
 	width:50px; 
 	height:50px;
-	margin-right: 1em; 
+	margin-right: 1em;
+	background: url('../images/red-ball.png') no-repeat center center;
+	background-size: contain;
 }
 
 .blur {
@@ -788,22 +799,108 @@ opacity: 1;
 	font-size: 30px;
 }
 
-.lottery_number 
+/* White Ball Numbers - Black Font */
+.white_ball_number 
 {
-	color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: x-large;
-	font-weight: bold;
+	color: #000000 !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: large !important;
+	font-weight: bold !important;
 	position: absolute;
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
+  	text-shadow: none !important;
+  	letter-spacing: 0px !important;
+  	background: transparent !important;
+  	animation: none !important;
+  	border-radius: 0 !important;
+  	padding: 0 !important;
+  	margin: 0 !important;
+  	display: block !important;
+  	min-width: auto !important;
 }
-/* Home Border for Tabs */
+
+/* Red Ball Numbers - White Font */
+.red_ball_number 
+{
+	color: #ffffff !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: large !important;
+	font-weight: bold !important;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-shadow: none !important;
+  	letter-spacing: 0px !important;
+  	background: transparent !important;
+  	animation: none !important;
+  	border-radius: 0 !important;
+  	padding: 0 !important;
+  	margin: 0 !important;
+  	display: block !important;
+  	min-width: auto !important;
+}
+
+/* Legacy lottery_number class for backward compatibility */
+.lottery_number 
+{
+	color: #000000 !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: large !important;
+	font-weight: bold !important;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-shadow: none !important;
+  	letter-spacing: 0px !important;
+  	background: transparent !important;
+  	animation: none !important;
+  	border-radius: 0 !important;
+  	padding: 0 !important;
+  	margin: 0 !important;
+  	display: block !important;
+  	min-width: auto !important;
+}
+/* Home Border for Tabs with LED Scoreboard Effect */
 .home-tabs-background 
 {
-	background-color: #484848;
+	background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+	border: 2px solid #333;
+	border-radius: 8px;
 	margin-bottom: 10px;
+	box-shadow: 
+		inset 0 0 20px rgba(0, 0, 0, 0.5),
+		0 0 20px rgba(0, 255, 0, 0.1);
+	position: relative;
+}
+
+.home-tabs-background::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: 
+		repeating-linear-gradient(
+			0deg,
+			transparent,
+			transparent 2px,
+			rgba(0, 255, 0, 0.03) 2px,
+			rgba(0, 255, 0, 0.03) 4px
+		),
+		repeating-linear-gradient(
+			90deg,
+			transparent,
+			transparent 2px,
+			rgba(0, 255, 0, 0.03) 2px,
+			rgba(0, 255, 0, 0.03) 4px
+		);
+	border-radius: 6px;
+	pointer-events: none;
 }
 .home-tabs-title { 
 	color: #ffffff;
@@ -825,50 +922,437 @@ opacity: 1;
 /* Wins Table Parameters */
 .wins {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 24px;
+	font-size: 16px;
 	color: #c44b5d;
 	text-align: center;
 }
+
+/* Wins Table Layout - 7 Column HTML Table Structure */
+.wins-table {
+	table-layout: fixed !important;
+	width: 100% !important;
+	border-collapse: collapse !important;
+	margin-bottom: 20px !important;
+}
+
+/* Header row styling - NORMAL FONT for categories (6/6, 5/6+, etc.) */
+.wins-table thead th {
+	background: #2b2b2b !important;
+	color: #de2623 !important;
+	padding: 8px 4px !important;
+	text-align: center !important;
+	font-weight: bold !important;
+	border: 1px solid #464646 !important;
+	width: 14.28% !important; /* 7 equal columns */
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	vertical-align: middle !important;
+	/* Explicitly NO LED styling for headers */
+	text-shadow: none !important;
+	animation: none !important;
+	border-radius: 0 !important;
+	letter-spacing: normal !important;
+}
+
+/* Data cells - LED styling ONLY for numeric values (0, 02, 04, 23, 82, 64, 102) */
+.wins-table tbody td {
+	vertical-align: middle !important;
+	padding: 12px 4px !important;
+	border: 1px solid #262626 !important;
+	background: #000 !important;
+	text-align: center !important;
+	width: 14.28% !important; /* Equal width for all 7 columns */
+	/* LED styling only for data values */
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace !important;
+	font-size: 18px !important;
+	color: #ff0000 !important;
+	font-weight: normal !important;
+	text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff0000 !important;
+	animation: ledPulseRed 3s ease-in-out infinite !important;
+	letter-spacing: 1px !important;
+	line-height: 1.2 !important;
+}
+
+/* Bootstrap Table Override - 7 Column Wins Layout (for .table.table-bordered) */
+.table.table-bordered {
+	table-layout: fixed !important;
+	width: 100% !important;
+	border-collapse: collapse !important;
+	margin-bottom: 20px !important;
+}
+
+/* Bootstrap table headers - Prize categories (6/6, 5/6+, etc.) */
+.table.table-bordered thead th.wins {
+	background: #2b2b2b !important;
+	color: #de2623 !important;
+	padding: 8px 4px !important;
+	text-align: center !important;
+	font-weight: bold !important;
+	border: 1px solid #464646 !important;
+	width: 14.28% !important; /* Force equal 7 columns */
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	vertical-align: middle !important;
+	/* Headers use normal font - NO LED effects */
+	text-shadow: none !important;
+	animation: none !important;
+	letter-spacing: normal !important;
+	white-space: nowrap !important; /* Prevent wrapping */
+}
+
+/* Bootstrap table data - Win values (0, 02, 04, 23, 82, 64, 102) */
+.table.table-bordered tbody td.win-value {
+	vertical-align: middle !important;
+	padding: 12px 4px !important;
+	border: 1px solid #262626 !important;
+	background: #000 !important;
+	text-align: center !important;
+	width: 14.28% !important; /* Force equal 7 columns */
+	/* LED styling for data values only */
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace !important;
+	font-size: 18px !important;
+	color: #ff0000 !important;
+	font-weight: normal !important;
+	text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff0000 !important;
+	animation: ledPulseRed 3s ease-in-out infinite !important;
+	letter-spacing: 1px !important;
+	line-height: 1.2 !important;
+	white-space: nowrap !important; /* Prevent wrapping */
+}
+
+/* Generic 7-Column Wins Table Structure for HTML Tables */
+.seven-column-wins {
+	table-layout: fixed !important;
+	width: 100% !important;
+	border-collapse: collapse !important;
+	margin-bottom: 20px !important;
+}
+
+.seven-column-wins thead th {
+	background: #2b2b2b !important;
+	color: #de2623 !important;
+	padding: 8px 4px !important;
+	text-align: center !important;
+	font-weight: bold !important;
+	border: 1px solid #464646 !important;
+	width: 14.28% !important; /* 100% ÷ 7 columns */
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	vertical-align: middle !important;
+	/* Headers use normal font - NO LED effects */
+	text-shadow: none !important;
+	animation: none !important;
+	letter-spacing: normal !important;
+}
+
+.seven-column-wins tbody td {
+	vertical-align: middle !important;
+	padding: 12px 4px !important;
+	border: 1px solid #262626 !important;
+	background: #000 !important;
+	text-align: center !important;
+	width: 14.28% !important;
+	/* LED styling for data values only */
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace !important;
+	font-size: 18px !important;
+	color: #ff0000 !important;
+	font-weight: normal !important;
+	text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff0000 !important;
+	animation: ledPulseRed 3s ease-in-out infinite !important;
+	letter-spacing: 1px !important;
+	line-height: 1.2 !important;
+}
+
+/* Force 7-column layout - Override Bootstrap responsive behavior */
+.table.table-bordered tr {
+	display: table-row !important; /* Override any flex/grid display */
+}
+
+.table.table-bordered th, 
+.table.table-bordered td {
+	display: table-cell !important; /* Ensure table-cell display */
+	float: none !important; /* Remove any float */
+	width: 14.28% !important; /* Force equal width */
+	min-width: 14.28% !important;
+	max-width: 14.28% !important;
+}
+
+/* Ensure table doesn't break on smaller screens for wins tables */
+@media (max-width: 768px) {
+	.table.table-bordered {
+		table-layout: fixed !important;
+		width: 100% !important;
+		min-width: 700px !important; /* Force minimum width to prevent wrapping */
+	}
+	
+	.table.table-bordered th.wins,
+	.table.table-bordered td.win-value {
+		width: 14.28% !important;
+		font-size: 12px !important; /* Smaller font on mobile */
+		padding: 6px 2px !important;
+	}
+}
+
+/* Prize Category Labels */
+.prize-category {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	color: #ffffff !important;
+	background: #000 !important;
+	text-shadow: none !important;
+	animation: none !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	padding: 8px 15px !important;
+	margin: 0 !important;
+	border-radius: 0 !important;
+	letter-spacing: normal !important;
+	display: table-cell !important;
+	vertical-align: middle !important;
+	width: 100px !important;
+	min-width: 100px !important;
+	max-width: 100px !important;
+}
+
+/* Overall Historic Prediction Wins - 7 Column HTML Table Structure */
+.wins-stats-table {
+	width: 100% !important;
+	table-layout: fixed !important;
+	border-collapse: collapse !important;
+	margin-bottom: 20px !important;
+}
+
+/* Header row - Prize categories (6/6, 5/6+, 5/6, 4/6, 2/6+, 2/6, 2/6+) */
+.wins-stats-table thead th {
+	background: #2b2b2b !important;
+	color: #de2623 !important;
+	padding: 8px 4px !important;
+	text-align: center !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	font-weight: bold !important;
+	text-transform: none !important;
+	border: 1px solid #464646 !important;
+	width: 14.28% !important; /* 100% / 7 columns = 14.28% */
+	vertical-align: middle !important;
+	/* NO LED styling for headers */
+	text-shadow: none !important;
+	animation: none !important;
+}
+
+/* Data row - Win values (0, 02, 04, 23, 82, 64, 102) - LED styling */
+.wins-stats-table tbody td {
+	padding: 12px 4px !important;
+	vertical-align: middle !important;
+	border: 1px solid #262626 !important;
+	background: #000 !important;
+	text-align: center !important;
+	width: 14.28% !important; /* Equal width for all 7 columns */
+	/* LED styling for data values only */
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace !important;
+	font-size: 18px !important;
+	color: #ff0000 !important;
+	font-weight: normal !important;
+	text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff0000 !important;
+	animation: ledPulseRed 3s ease-in-out infinite !important;
+	letter-spacing: 1px !important;
+	line-height: 1.2 !important;
+}
 .win-value {
-	font-family: 'Erbos Draco 1st Open NBP';
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace;
     font-weight: normal;
     font-style: normal;
-	font-size: 24px;
-	color: #e70000;
+	font-size: 18px;
+	color: #ff0000;
 	text-align: center;
-	padding: 10px;
+	padding: 4px 8px;
+	text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff0000;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+	letter-spacing: 1px;
+	min-width: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.2;
 }
 .table-bordered
 {
-	table-layout: fixed; 
+	table-layout: fixed !important; 
 	width: 100%;
-	height: 100%;
+	height: auto;
+	border-collapse: collapse !important;
+}
+
+.table-bordered td {
+	vertical-align: middle !important;
+	text-align: center !important;
+	padding: 8px 4px !important;
+	height: auto !important;
+	white-space: nowrap;
+	border: 1px solid #262626 !important;
+	background: #000 !important;
+}
+
+.table-bordered th {
+	background: #2b2b2b !important;
+	color: #de2623 !important;
+	padding: 10px 6px !important;
+	text-align: center !important;
+	font-weight: bold !important;
+	border: 1px solid #464646 !important;
+}
+
+/* 7-Column Equal Layout for Bordered Tables */
+.table-bordered.wins-layout th,
+.table-bordered.wins-layout td {
+	width: 14.28% !important; /* 7 equal columns */
+	text-align: center !important;
+	padding: 12px 4px !important;
+}
+
+/* Headers for prize categories - NORMAL font, NO LED effects */
+.table-bordered.wins-layout th {
+	background: #2b2b2b !important;
+	color: #de2623 !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	font-weight: bold !important;
+	text-transform: none !important;
+	text-shadow: none !important;
+	animation: none !important;
+	border-radius: 0 !important;
+	letter-spacing: normal !important;
+}
+
+/* Data cells use LED styling ONLY for numeric values */
+.table-bordered.wins-layout td {
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace !important;
+	font-size: 18px !important;
+	color: #ff0000 !important;
+	text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff0000 !important;
+	animation: ledPulseRed 3s ease-in-out infinite !important;
+	background: #000 !important;
+	letter-spacing: 1px !important;
+	line-height: 1.2 !important;
+}
+
+/* Seven Column Wins Table - Complete Structure */
+.seven-column-wins {
+	width: 100% !important;
+	table-layout: fixed !important;
+	border-collapse: collapse !important;
+	margin: 20px 0 !important;
+}
+
+/* Headers - Normal Arial font for categories (6/6, 5/6+, etc.) */
+.seven-column-wins th {
+	background: #2b2b2b !important;
+	color: #de2623 !important;
+	padding: 15px 8px !important;
+	text-align: center !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 16px !important;
+	font-weight: bold !important;
+	border: 2px solid #464646 !important;
+	width: 14.28% !important;
+	vertical-align: middle !important;
+	white-space: nowrap !important;
+	/* Explicitly NO LED styling */
+	text-shadow: none !important;
+	animation: none !important;
+	background: #2b2b2b !important;
+	border-radius: 0 !important;
+	letter-spacing: normal !important;
+}
+
+/* Data cells - Normal background, positioned for LED content */
+.seven-column-wins td {
+	background: #000 !important;
+	padding: 15px 8px !important;
+	text-align: center !important;
+	border: 2px solid #262626 !important;
+	vertical-align: middle !important;
+	width: 14.28% !important;
+}
+
+/* LED styling ONLY for win values inside data cells */
+.seven-column-wins td .win-value,
+.seven-column-wins td.led-value {
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace !important;
+	font-size: 20px !important;
+	color: #ff0000 !important;
+	font-weight: normal !important;
+	text-shadow: 0 0 8px #ff0000, 0 0 16px #ff0000, 0 0 24px #ff0000 !important;
+	animation: ledPulseRed 3s ease-in-out infinite !important;
+	letter-spacing: 2px !important;
+	line-height: 1.2 !important;
+	background: rgba(0, 0, 0, 0.9) !important;
+	border-radius: 4px !important;
+	padding: 8px !important;
+	display: inline-block !important;
+}
+
+.table-bordered .win-value,
+.table-bordered .number-of-wins,
+.table-bordered .draw-date-numbers,
+.table-bordered .draw-numbers {
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.2 !important;
+	width: auto !important;
+	max-width: 100% !important;
 }
 .draws-title {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace;
 	font-size: 30px;
-	color: #c44b5d;
+	color: #00ff00;
 	text-align: center;
+	text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 8px;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 .draws-title-number {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
-	color: #ffffff;
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace;
+	font-size: 36px;
+	color: #00ff00;
 	text-align: left;
+	text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 10px;
+	border-radius: 5px;
+	letter-spacing: 3px;
+	display: inline-block;
+	min-width: 120px;
+	text-align: center;
 }
 .draw-date-text {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #ffffff;
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace;
+	font-size: 16px;
+	color: #00ff00;
 	text-align: left;
+	text-shadow: 0 0 8px #00ff00, 0 0 16px #00ff00, 0 0 24px #00ff00;
+	letter-spacing: 1px;
 }
 .draw-numbers {
-	font-family: 'Erbos Draco 1st Open NBP';
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace;
     font-weight: normal;
 	font-style: normal;
-	padding-left: 10px;
-	font-size: 14px;
-	text-align: left;
+	padding: 4px 8px;
+	font-size: 16px;
+	color: #ff0000;
+	text-align: center;
+	text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff0000;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+	letter-spacing: 1px;
+	display: inline-block;
+	margin: 1px;
+	vertical-align: middle;
+	line-height: 1.2;
 }
 .win-text {
 	font-family: Arial, Helvetica, sans-serif;
@@ -878,36 +1362,95 @@ opacity: 1;
 }
 
 .number-of-wins {
-	font-family: 'Erbos Draco 1st Open NBP';
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace;
     font-weight: normal;
     font-style: normal;
-	font-size: 30px;
-	color: #ffffff;
+	font-size: 18px;
+	color: #ff0000;
+	text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff0000;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 4px 8px;
+	border-radius: 3px;
+	letter-spacing: 1px;
+	display: inline-block;
+	min-width: 50px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1.2;
 }
 .win-number {
 	color: #e70000;
 }
 
 .draw-date {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
-	color: #c44b5d;
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace;
+	font-size: 24px;
+	color: #00ff00;
 	text-align: center;
+	text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 6px 10px;
+	border-radius: 4px;
+	letter-spacing: 1px;
 }
 
 .draw-date-numbers {
-	font-family: 'Erbos Draco 1st Open NBP';
+	font-family: 'Erbos Draco 1st Open NBP', 'Courier New', 'Lucida Console', 'Monaco', monospace;
     font-weight: normal;
 	font-style: normal;
-	padding-left: 10px;
-	font-size: 18px;
-	color: #ffffff;
+	padding: 4px 8px;
+	font-size: 16px;
+	color: #ff0000;
 	text-align: center;
+	text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff0000;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+	letter-spacing: 1px;
+	display: inline-block;
+	margin: 1px;
+	vertical-align: middle;
+	line-height: 1.2;
+}
+
+/* LED Glow Animation */
+@keyframes ledPulseGreen {
+	0%, 100% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00; }
+	50% { text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00; }
+}
+
+@keyframes ledPulseRed {
+	0%, 100% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000; }
+	50% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000; }
+}
+
+@keyframes ledPulseYellow {
+	0%, 100% { text-shadow: 0 0 8px #00ff00, 0 0 16px #00ff00, 0 0 24px #00ff00; }
+	50% { text-shadow: 0 0 12px #00ff00, 0 0 24px #00ff00, 0 0 36px #00ff00, 0 0 48px #00ff00; }
+}
+
+.draws-title, .draws-title-number {
+	animation: ledPulseGreen 2s ease-in-out infinite;
+}
+
+/* LED Animation - Only for Statistics */
+.win-value, .number-of-wins, .draw-date-numbers, .draw-numbers {
+	animation: ledPulseRed 3s ease-in-out infinite;
+}
+
+/* Ensure ball numbers and categories are never affected by LED styling */
+.white_ball_number, .red_ball_number, .lottery_number, .prize-category, .win-category {
+	animation: none !important;
+	text-shadow: none !important;
+	background: transparent !important;
+}
+
+.draw-date {
+	animation: ledPulseGreen 2s ease-in-out infinite;
 }
 
 /* Enhanced styling for Most Recent Draw section in Edit Lottery */
 .recent-draw-numbers {
-	font-family: 'Erbos Draco 1st Open NBP', Arial, Helvetica, sans-serif !important;
+	font-family: 'Erbos light_led_board-7', Arial, Helvetica, sans-serif !important;
 	font-weight: bold !important;
 	font-size: 2.5rem !important;
 	color: #fff !important;
