@@ -587,3 +587,81 @@ text-align: left;
 		font-size: 0.75rem;
 	}
 }
+
+/* Admin Navigation and Sidebar Font Weight Fixes */
+/* Fix overly bold text in Chrome browser - Ultra high specificity */
+
+/* Navigation menu items - Maximum specificity */
+html body .navbar-dark .navbar-nav .nav-item a,
+html body .navbar-dark .navbar-nav .nav-link,
+html body .navbar-nav .nav-item a,
+html body .navbar-nav .nav-link,
+html body .nav-item a,
+html body .nav-link,
+html body a.nav-link,
+html body .dropdown-item,
+html body a.dropdown-item {
+	font-weight: 300 !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Navbar brand and toggles */
+html body .navbar-brand,
+html body .navbar-toggler {
+	font-weight: 300 !important;
+}
+
+/* Admin sidebar elements - Ultra high specificity */
+html body .container-fluid .row .col-md-4 section a,
+html body .container-fluid .row .col-md-4 section span,
+html body .container-fluid .row .col-md-4 section i,
+html body .container-fluid .row .col-md-4 section,
+html body .col-md-4 section a,
+html body .col-md-4 section span,
+html body .col-md-4 section i,
+html body .col-md-4 section {
+	font-weight: 300 !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Ensure all sidebar content has light font weight */
+html body .col-md-4 * {
+	font-weight: 300 !important;
+}
+
+/* Override all possible Bootstrap bold defaults */
+html body .navbar-dark .navbar-nav .nav-item.active > .nav-link,
+html body .navbar-dark .navbar-nav .nav-item > .nav-link:hover,
+html body .navbar-dark .navbar-nav .nav-item > .nav-link:focus,
+html body .navbar-nav > .nav-item > .nav-link,
+html body .navbar-expand-lg .navbar-nav .nav-link,
+html body .dropdown-toggle,
+html body .btn {
+	font-weight: 300 !important;
+}
+
+/* Force override any remaining bold styles with nuclear option */
+html body nav *,
+html body .navbar *,
+html body .navbar-nav *,
+html body .dropdown-menu *,
+html body .navbar-dark * {
+	font-weight: 300 !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Chrome-specific font rendering fixes */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	html body .navbar-nav .nav-link,
+	html body .navbar-nav .nav-item a,
+	html body .dropdown-item,
+	html body .col-md-4 section a,
+	html body .col-md-4 section span {
+		font-weight: 300 !important;
+		-webkit-font-smoothing: antialiased !important;
+	}
+}
